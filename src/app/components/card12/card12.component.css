@@ -1,0 +1,20 @@
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: #006aa7; /* Azul da prefeitura de Porto Velho */
+  box-shadow: rgba(0, 106, 167, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  position: relative;
+}
+
+.card::before {
+  content: 'e-aud';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #000; /* Preto para melhor visualização */
+  z-index: 2;
+}
